@@ -1,0 +1,7 @@
+mongo:
+ image: mongo:3.0.2
+ volumes:
+  - .:/data
+ ports:
+  - "27017:27017"
+ command: mongod --config /data/mongod.conf
